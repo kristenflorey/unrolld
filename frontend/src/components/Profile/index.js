@@ -22,6 +22,10 @@ function Profile() {
                 </div>
                 <div>
                     <h1 className="activity">Your Recent Activity</h1>
+                    <hr/>
+                    <div>
+    <h3 className="users-activity">{currentUser.name} visited Wasabi Sushi Bar</h3>
+                    </div>
                 </div>
             </div>
         </>

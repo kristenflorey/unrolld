@@ -6,7 +6,8 @@ module.exports = (sequelize, DataTypes) => {
     website: DataTypes.STRING
   }, {});
   SushiBar.associate = function(models) {
-    // associations can be defined here
+    SushiBar.hasMany(models.SushiRoll, {foreignKey: "bar_id"})
+    SushiBar.belongsToMany(models.SushiRoll, {foreignKey: "sushi_bar_id", through:models.BarRolls, otherKey:"sushi_roll_id"})
   };
   return SushiBar;
 };

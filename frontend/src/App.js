@@ -6,7 +6,8 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import HomePage from "./components/HomePage";
 import Profile from "./components/Profile";
-import LoginFormPage from "./components/LoginFormPage"
+import LoginFormPage from "./components/LoginFormPage";
+import Rolls from "./components/Rolls";
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/rolls">
+            <Rolls />
           </Route>
         </Switch>
       )}

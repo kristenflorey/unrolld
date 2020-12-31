@@ -4,9 +4,9 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('SushiRolls', [
       {name:"Dragon Roll",
-      bar_id:1,
-      createdAt:new Date(),
-      updatedAt:new Date()}
+        bar_id:1,
+        createdAt:new Date(),
+        updatedAt:new Date()}
     ], {});
 },
 

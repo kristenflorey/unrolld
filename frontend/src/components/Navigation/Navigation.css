@@ -71,3 +71,23 @@
   display: flex;
   flex-direction: row;
 }
+
+.user-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-links {
+  align-self: center;
+  margin-right: 200px;
+}
+
+.nav-links > a {
+  margin-right: 150px;
+  color: white;
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  text-decoration: none;
+}

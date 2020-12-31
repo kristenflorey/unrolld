@@ -35,11 +35,17 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <div className="avatar-logout">
-        <NavLink to="/profile" className="avatar-button">
-          <img className="profile-avatar" alt="avatar"src={bubbleBop} />
-        </NavLink>
-        <button className="logout-button" onClick={logout}>Log Out</button>
+      <div className="user-navbar">
+        <div className="nav-links">
+          <NavLink to="/rolls" className="rolls-link">Rolls</NavLink>
+          <NavLink to="/bars" className="rolls-link">Sushi Bars</NavLink>
+        </div>
+        <div className="avatar-logout">
+          <NavLink to="/profile" className="avatar-button">
+            <img className="profile-avatar" alt="avatar"src={bubbleBop} />
+          </NavLink>
+          <button className="logout-button" onClick={logout}>Log Out</button>
+        </div>
       </div>
       {/* {showMenu && (
         <ul className="profile-dropdown">
