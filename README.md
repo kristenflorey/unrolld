@@ -1,5 +1,5 @@
 # UNROLLD
- ## A Place to Share and Discover Your Favorite Sushi
+ A Place to Share and Discover Your Favorite Sushi
 
 ## Table of Contents
 
