@@ -1,0 +1,32 @@
+.circle {
+  background-color: #f9af00;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  padding: 40px;
+  margin-left: -60px;
+}
+
+.discoversushi {
+  text-align: left;
+  color: #16322d;
+  font-family: Avenir;
+  font-size: 40px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sushi-tray {
+  height: 500px;
+  width: auto;
+  margin-right: 40px;
+  margin-top: 20px;
+  /* -webkit-filter: drop-shadow(-15px 5px 1.5px rgb(116, 116, 116));
+  filter: drop-shadow(-20px 5px 1.5px rgb(116, 115, 115)); */
+}

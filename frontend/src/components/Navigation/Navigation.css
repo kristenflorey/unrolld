@@ -1,3 +1,73 @@
 .profile-dropdown {
   position: absolute;
 }
+
+.unrolld {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  font-size: 100px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 30px 50px 30px;
+  height: 100px;
+}
+
+.nav-bar > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+}
+
+.nav-bar > div > a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  margin-right: 30px;
+}
+
+.nav-bar > div > a:hover {
+  transform: scale(1.03);
+}
+
+.avatar-button {
+  outline: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+.profile-avatar {
+  height: 80px;
+  width: auto;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.1);
+}
+
+.logout-button {
+  outline: inherit;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: Arial;
+  text-transform: uppercase;
+  margin: 0 0 4px 10px;
+  font-size: 15px;
+}
+
+.logout-button:hover {
+  transform: scale(1.1);
+}
+.avatar-logout {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}

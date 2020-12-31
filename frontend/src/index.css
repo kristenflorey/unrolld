@@ -1,1 +1,9 @@
 /* TODO Add site wide styles */
+body {
+  background-color: #fd754f;
+}
+/*
+div#root {
+  display: flex;
+  justify-content: space-between;
+} */

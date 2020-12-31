@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import './LoginForm.css';
+import "./LoginForm.css"
 
 function LoginFormPage() {
   const dispatch = useDispatch();
@@ -11,7 +11,9 @@ function LoginFormPage() {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
-  if (sessionUser) return <Redirect to="/" />;
+
+  // REDIRECT LOGIN
+  if (sessionUser) return <Redirect to="/profile" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,33 +26,31 @@ function LoginFormPage() {
 
   return (
     <>
-      <h1>Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <ul>
-          {errors.map((error, idx) => (
-            <li key={idx}>{error}</li>
-          ))}
-        </ul>
-        <label>
-          Username or Email
-          <input
-            type="text"
-            value={credential}
-            onChange={(e) => setCredential(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Password
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </label>
-        <button type="submit">Log In</button>
-      </form>
+      <div className="login-form">
+        <form onSubmit={handleSubmit}>
+        <p>SIGN IN</p>
+          <ul>
+            {errors.map((error, idx) => (
+              <li key={idx}>{error}</li>
+            ))}
+          </ul>
+            <input
+              type="text"
+              value={credential}
+              placeholder="Email"
+              onChange={(e) => setCredential(e.target.value)}
+              required
+            />
+            <input
+              type="password"
+              value={password}
+              placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          <button className="login-submit"type="submit">LOG IN</button>
+        </form>
+      </div>
     </>
   );
 }

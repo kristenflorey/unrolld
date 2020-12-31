@@ -1,0 +1,82 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  align-items: center;
+  margin: auto;
+}
+
+.login-form > form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #f9af00;
+  /* background-image: linear-gradient(to right bottom, #f9af00, #f57211); */
+
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  /* margin: 20px auto; */
+  padding: 80px;
+  font-family: "Arial Narrow";
+  color: white;
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: 2;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 200px, 0);
+  }
+}
+
+.login-form > form > p {
+  /* font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white; */
+  color: #16322d;
+  font-family: Avenir;
+  font-size: 40px;
+  margin: 5px 0 18px 0;
+}
+
+.login-form > form > input {
+  height: 30px;
+  width: 200px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: inherit;
+  border: none;
+}
+
+.login-submit {
+  height: 40px;
+  width: 100px;
+  margin: 20px 0px 30px 0px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #193a34;
+  outline: inherit;
+  border: none;
+  /* font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: #fd754f; */
+  color: #ffc640;
+  font-family: Avenir;
+  font-size: 15px;
+}
+
+::placeholder {
+  text-align: center;
+  /* color: white; */
+  text-transform: uppercase;
+  color: #16322d;
+  font-family: Avenir;
+  font-size: 15px;
+}

@@ -1,0 +1,33 @@
+.profile-avatar-pic {
+  height: 200px;
+  width: auto;
+}
+
+.profile-body {
+  padding: 40px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.username {
+  margin-top: 40px;
+  font-family: "Arial Narrow";
+  color: white;
+  font-size: 20px;
+}
+
+.name {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.activity {
+  margin-top: 40px;
+  font-family: "Arial Narrow";
+  color: white;
+  font-size: 40px;
+  margin-left: 50px;
+}
