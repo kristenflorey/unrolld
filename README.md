@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
-# Kristen's React Solo Project 
-(App Name Pending...)
+# UNROLLD
+ A Place to Share and Discover Your Favorite Sushi
 
 ## Table of Contents
 
@@ -13,6 +11,3 @@
 
 ## Dependencies
 
-
-    
->>>>>>> 68033392512672cbedc1d6824b186e8e149ae0d1
