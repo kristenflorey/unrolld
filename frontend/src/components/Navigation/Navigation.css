@@ -91,3 +91,7 @@
   font-size: 1.5vw;
   text-decoration: none;
 }
+
+.rolls-link:hover {
+  transform: scale(1.03);
+}

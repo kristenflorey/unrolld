@@ -38,7 +38,7 @@ function ProfileButton({ user }) {
       <div className="user-navbar">
         <div className="nav-links">
           <NavLink to="/rolls" className="rolls-link">Rolls</NavLink>
-          <NavLink to="/bars" className="rolls-link">Sushi Bars</NavLink>
+          <NavLink to="/bars" className="bars-link">Sushi Bars</NavLink>
         </div>
         <div className="avatar-logout">
           <NavLink to="/profile" className="avatar-button">

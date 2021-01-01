@@ -1,4 +1,12 @@
 /* TODO Add site wide styles */
+@media screen and (max-width: 1200px) {
+  .header,
+  .mountains-img,
+  .navbar {
+    width: 100%;
+  }
+}
+
 body {
   background-color: #fd754f;
 }

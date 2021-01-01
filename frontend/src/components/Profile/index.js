@@ -11,20 +11,18 @@ function Profile() {
         <>
             <div className="profile-body">
                 <div className="profile">
-                    <div>
-                        <img className="profile-avatar-pic" alt="avatar"src={bubbleBop} />
-                    </div>
-                    <div className="username">
-                        <p className="name">Arianna Johnson</p>
-                        <ps>{currentUser.username}</ps>
+                    <div className="profile-text">
+                        <p className="name">Jesse Warren</p>
+                        <p classNAme="username">{currentUser.username}</p>
                     </div>
 
                 </div>
                 <div>
-                    <h1 className="activity">Your Recent Activity</h1>
-                    <hr/>
+                    {/* <h1 className="activity">Your Recent Activity</h1>
+                    <hr/> */}
                     <div>
-    <h3 className="users-activity">{currentUser.name} visited Wasabi Sushi Bar</h3>
+                    <p className="users-activity"><b>Jesse Warren</b> <br/> enjoyed a <b>Dragon Roll</b> <br/> at <b>Wasabi Sushi Bar</b></p>
+                    <p className="users-activity-2"><b>Jesse Warren</b> <br/> visited <b>Aikou Sushi Bar</b><br/> in <b> San Diego, CA </b></p>
                     </div>
                 </div>
             </div>

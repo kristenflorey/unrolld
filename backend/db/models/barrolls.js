@@ -1,12 +1,12 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const BarRolls = sequelize.define('BarRolls', {
+  const BarRoll = sequelize.define('BarRoll', {
     sushi_bar_id: DataTypes.INTEGER,
     sushi_roll_id: DataTypes.INTEGER
   }, {});
-  BarRolls.associate = function(models) {
-    BarRolls.belongsTo(models.SushiBar, {foreignKey:"sushi_bar_id"})
-    BarRolls.belongsTo(models.SushiRoll, {foreignKey:"sushi_roll_id"})
+  BarRoll.associate = function(models) {
+    BarRoll.belongsTo(models.SushiBar, {foreignKey:"sushi_bar_id"})
+    BarRoll.belongsTo(models.SushiRoll, {foreignKey:"sushi_roll_id"})
   };
   return BarRolls;
 };

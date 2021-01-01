@@ -27,9 +27,11 @@ function Rolls() {
             {rolls.map((roll) => {
                 const { id, name, SushiBar:{name:location} } = roll;
                 return (
-                    <div className="sushi-roll-div" key={id}>
-                        <h2 className="roll-name">{name}</h2>
-                        <h3 className="roll-location">{location}</h3>
+                    <div className="sushi-rolls">
+                        <div className="sushi-roll-div" key={id}>
+                            <h1 className="roll-name">{name}</h1>
+                            <h3 className="roll-location">{location} Sushi Bar</h3>
+                        </div>
                     </div>
                 )
             })}
