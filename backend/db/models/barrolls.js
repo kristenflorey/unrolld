@@ -6,7 +6,11 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   BarRolls.associate = function(models) {
     BarRolls.belongsTo(models.SushiBar, {foreignKey:"sushi_bar_id"})
+<<<<<<< Updated upstream
     BarRolls.belongsTo(models.SushiRoll, {foreignKey:"sushi_roll_id"})
+=======
+    BarRolls.belongsTo(models.SushiRoll, {foreignKey:"sushi_bar_id"})
+>>>>>>> Stashed changes
   };
   return BarRolls;
 };

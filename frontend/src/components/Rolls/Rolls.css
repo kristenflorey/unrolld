@@ -1,0 +1,41 @@
+<<<<<<< Updated upstream
+=======
+.sushi-rolls {
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(10, auto);
+  grid-auto-flow: row;
+  justify-content: space-between;
+  margin: 0 0 0 50px;
+}
+
+.sushi-rolls-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.sushi-rolls-div {
+  width: 350px;
+  height: 100px;
+  border: solid 5px #fec640;
+  font-family: Avenir;
+  color: #226259;
+  border-radius: 25px;
+  padding: 10px 10px 30px 30px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.sushi-roll-img {
+  margin-top: 20px;
+}
+
+.sushi-avatar {
+  height: 80px;
+  width: auto;
+}
+
+.sushi-avatar:hover {
+  transform: scale(1.1);
+}
+>>>>>>> Stashed changes

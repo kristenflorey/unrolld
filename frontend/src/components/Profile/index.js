@@ -11,12 +11,18 @@ function Profile() {
         <>
             <div className="profile-body">
                 <div className="profile">
+<<<<<<< Updated upstream
                     <div>
                         <img className="profile-avatar-pic" alt="avatar"src={bubbleBop} />
                     </div>
                     <div className="username">
                         <p className="name">Arianna Johnson</p>
                         <ps>{currentUser.username}</ps>
+=======
+                    <div className="profile-text">
+                        <p className="name">Jesse Warren</p>
+                        <p className="username">{currentUser.username}</p>
+>>>>>>> Stashed changes
                     </div>
 
                 </div>
