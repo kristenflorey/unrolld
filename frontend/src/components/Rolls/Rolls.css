@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 .sushi-rolls {
   display: inline-grid;
   grid-template-columns: repeat(3, auto);
@@ -38,4 +36,3 @@
 .sushi-avatar:hover {
   transform: scale(1.1);
 }
->>>>>>> Stashed changes
