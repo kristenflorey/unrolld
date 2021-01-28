@@ -32,11 +32,9 @@ function Rolls() {
                 console.log(roll)
                 console.log(id)
                 return (
-<<<<<<< Updated upstream
                     <div className="sushi-roll-div" key={id}>
                         <h2 className="roll-name">{name}</h2>
                         <h3 className="roll-location">{location}</h3>
-=======
                     <div className="sushi-rolls">
                         <div className="sushi-rolls-div">
                             <NavLink to={`/sushi-${id}`}className="sushi-roll-img" key={id}>
@@ -47,7 +45,7 @@ function Rolls() {
                                 <h3 className="roll-location">{location} Sushi Bar</h3>
                             </div>
                         </div>
->>>>>>> Stashed changes
+                    </div>
                     </div>
                 )
             })}
