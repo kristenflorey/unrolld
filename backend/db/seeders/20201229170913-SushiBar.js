@@ -4,19 +4,6 @@ const {SushiBar} = require('../models')
 module.exports = {
   up: (queryInterface, Sequelize) => {
       return queryInterface.bulkInsert('SushiBars', [
-<<<<<<< Updated upstream
-        {name:"Wasabi",
-        location: "San Diego, CA",
-        website:"www.wasabi.com",
-        createdAt:new Date(),
-        updatedAt:new Date()},
-      {name:"Kamiya",
-      location: "Orlando, FL",
-      website:"www.kamiya56.com", createdAt:new Date(), updatedAt:new Date()},
-    {name:"Ashia",
-    location: "San Diego, CA",
-    website:"www.ashia.com", createdAt:new Date(), updatedAt:new Date()}
-=======
         {
           name:"Wasabi",
           location: "San Diego, CA",
@@ -87,7 +74,6 @@ module.exports = {
           createdAt:new Date(),
           updatedAt:new Date()
         }
->>>>>>> Stashed changes
       ], {});
 
   },
