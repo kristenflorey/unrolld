@@ -5,12 +5,6 @@ module.exports = {
   up: async(queryInterface, Sequelize) => {
     const bars = await SushiBar.findAll();
     return queryInterface.bulkInsert('SushiRolls', [
-<<<<<<< Updated upstream
-      {name:"Dragon Roll",
-        bar_id:1,
-        createdAt:new Date(),
-        updatedAt:new Date()}
-=======
       {
         name:"Dragon Roll",
         bar_id:bars[0].id,
@@ -72,7 +66,6 @@ module.exports = {
         updatedAt:new Date()
       },
 
->>>>>>> Stashed changes
     ], {});
 },
 
