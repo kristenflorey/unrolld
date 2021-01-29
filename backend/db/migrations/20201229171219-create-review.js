@@ -18,6 +18,7 @@ module.exports = {
       },
       roll_id: {
         type: Sequelize.INTEGER,
+        allowNull: true,
         references:{model:"SushiRolls"}
       },
       rating: {
