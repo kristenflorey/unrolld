@@ -4,8 +4,8 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Reviews', [
       {
-      user_id: 4,
-      bar_id: 85,
+      user_id: 1,
+      bar_id: 1,
       roll_id: null,
       rating: 4,
       review: 'Kamiya is so great omg',
