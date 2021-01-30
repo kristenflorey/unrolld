@@ -1,0 +1,41 @@
+.sushi-bars {
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(10, auto);
+  grid-auto-flow: row;
+  justify-content: space-between;
+  margin: 0 0 0 50px;
+}
+
+.sushi-bar-div {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: auto;
+  border: solid 5px #fec640;
+  font-family: Avenir;
+  color: #226259;
+  border-radius: 25px;
+  padding: 10px 10px 30px 30px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.bar-website {
+  font-family: Avenir;
+  color: #226259;
+  text-decoration: none;
+}
+
+.sushi-bar-img {
+  margin-top: 20px;
+}
+
+.bar-avatar {
+  height: 80px;
+  width: auto;
+}
+
+.bar-avatar:hover {
+  transform: scale(1.1);
+}

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Rolls.css';
 import california from "../../img/california.png";
-import caviar from "../../img/caviar.png";
+// // import caviar from "../../img/caviar.png";
 
 
 function Rolls() {
@@ -32,12 +32,10 @@ function Rolls() {
                 console.log(roll)
                 console.log(id)
                 return (
-                    <div className="sushi-roll-div" key={id}>
-                        <h2 className="roll-name">{name}</h2>
-                        <h3 className="roll-location">{location}</h3>
                     <div className="sushi-rolls">
                         <div className="sushi-rolls-div">
-                            <NavLink to={`/sushi-${id}`}className="sushi-roll-img" key={id}>
+                            <NavLink to={`/roll/${id}`}className="sushi-roll-img" key={id}>
+                                {/* <img className="sushi-avatar" alt="avatar"src={`./img/sushi-roll-${id}.png`} /> */}
                                 <img className="sushi-avatar" alt="avatar"src={california} />
                             </NavLink>
                             <div className={`sushi-roll-div-${id}`} key={id}>
@@ -45,7 +43,6 @@ function Rolls() {
                                 <h3 className="roll-location">{location} Sushi Bar</h3>
                             </div>
                         </div>
-                    </div>
                     </div>
                 )
             })}

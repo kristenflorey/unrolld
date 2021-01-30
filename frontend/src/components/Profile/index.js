@@ -15,7 +15,7 @@ function Profile() {
                         <img className="profile-avatar-pic" alt="avatar"src={bubbleBop} />
                     </div>
                     <div className="username">
-                        <p className="name">Arianna Johnson</p>
+                        <p className="name">{currentUser.name}</p>
                         <ps>{currentUser.username}</ps>
                     </div>
 
@@ -24,7 +24,7 @@ function Profile() {
                     <h1 className="activity">Your Recent Activity</h1>
                     <hr/>
                     <div>
-    <h3 className="users-activity">{currentUser.name} visited Wasabi Sushi Bar</h3>
+                        <h3 className="users-activity">{currentUser.name} visited Wasabi Sushi Bar</h3>
                     </div>
                 </div>
             </div>

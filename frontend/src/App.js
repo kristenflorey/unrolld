@@ -8,6 +8,10 @@ import HomePage from "./components/HomePage";
 import Profile from "./components/Profile";
 import LoginFormPage from "./components/LoginFormPage";
 import Rolls from "./components/Rolls";
+import Bars from "./components/Bars";
+import SushiRoll from "./components/SushiRoll";
+import Reviews from "./components/Reviews";
+
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -34,6 +38,15 @@ function App() {
           </Route>
           <Route path="/rolls">
             <Rolls />
+          </Route>
+          <Route path="/bars">
+            <Bars />
+          </Route>
+          <Route path="/roll/:id">
+            <SushiRoll />
+          </Route>
+          <Route path="/reviews/:id">
+            <Reviews />
           </Route>
         </Switch>
       )}
