@@ -4,7 +4,8 @@
   grid-template-rows: repeat(10, auto);
   grid-auto-flow: row;
   justify-content: space-between;
-  margin: 0 0 0 50px;
+  margin: 10px 0px 0 10px;
+  padding: 40px;
 }
 
 .sushi-rolls-div {
@@ -13,26 +14,56 @@
 }
 
 .sushi-rolls-div {
-  width: 350px;
-  height: 100px;
-  border: solid 5px #fec640;
+  width: 378px;
+  height: 148px;
+  border: solid 8px #fec640;
   font-family: Avenir;
   color: #226259;
-  border-radius: 25px;
-  padding: 10px 10px 30px 30px;
-  margin-left: 50px;
-  margin-top: 40px;
+  border-radius: 20px;
+  padding: 20px 10px 30px 30px;
+  /* margin-left: 50px;
+  margin-top: 100px; */
 }
 
 .sushi-roll-img {
-  margin-top: 20px;
+  margin: 20px 5px 0 0;
 }
 
 .sushi-avatar {
-  height: 80px;
+  height: 90px;
   width: auto;
 }
 
 .sushi-avatar:hover {
   transform: scale(1.1);
+}
+
+#back-card {
+  background-color: #fd754f;
+  width: 380px;
+  height: 160px;
+  border: solid 8px #fec640;
+  font-family: Avenir;
+  color: #226259;
+  border-radius: 20px;
+  padding: 10px 10px 30px 30px;
+}
+
+.Flipcard {
+  border-radius: 25px;
+}
+
+#font-card {
+  background-color: #fd754f;
+  width: 370px;
+  height: 150px;
+  border: solid 5px #fec640;
+  font-family: Avenir;
+  color: #226259;
+  border-radius: 25px;
+  padding: 10px 10px 30px 30px;
+}
+
+#back-card {
+  background-color: #fd754f;
 }

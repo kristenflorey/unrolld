@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Rolls.css';
-import california from "../../img/california.png";
-// // import caviar from "../../img/caviar.png";
+// import california from "../../img/california.png";
+// import caviar from "../../img/caviar.png";
+import FlipCard from 'fc-card-component';
+
+
 
 
 function Rolls() {
@@ -33,16 +36,36 @@ function Rolls() {
                 console.log(id)
                 return (
                     <div className="sushi-rolls">
+                        <FlipCard
+                        id="font-card"
+                        className='flippy-card'
+                        height={200}
+                        width={420}
+                        margin={20}
+                        rotationAxis="y"
+                        textFront={
                         <div className="sushi-rolls-div">
                             <NavLink to={`/roll/${id}`}className="sushi-roll-img" key={id}>
-                                {/* <img className="sushi-avatar" alt="avatar"src={`./img/sushi-roll-${id}.png`} /> */}
-                                <img className="sushi-avatar" alt="avatar"src={california} />
+                                <img className="sushi-avatar" alt="avatar"src={`./img/sushi-roll-${id}.png`} />
+                                {/* <img className="sushi-avatar" alt="avatar"src={california} /> */}
                             </NavLink>
                             <div className={`sushi-roll-div-${id}`} key={id}>
                                 <h1 className="roll-name">{name}</h1>
                                 <h3 className="roll-location">{location} Sushi Bar</h3>
                             </div>
                         </div>
+                        }
+                        textBack={
+                        <div className="back-div" id="back-card">
+                            <p>This is the reviews side</p>
+                        </div>
+                        }
+                        // fontSize={27}
+                        colorFront="yellow"
+                        textColorFront="cream"
+                        >
+
+                        </FlipCard>
                     </div>
                 )
             })}

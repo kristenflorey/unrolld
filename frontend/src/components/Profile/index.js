@@ -1,6 +1,7 @@
 import "./Profile.css"
 import { useSelector } from 'react-redux';
 import bubbleBop from "../../img/blue-avatar.svg";
+// import bubbleBop from "../../../public/img/blue-avatar.svg";
 
 function Profile() {
     const currentUser = useSelector(state => {

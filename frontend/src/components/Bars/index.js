@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import './bars.css';
 // import { useDispatch } from 'react-redux';
 import caviar from "../../img/caviar.png";
+// import caviar from "../../../public/img/caviar.png";
 
 function Bars() {
     const [bars, setBars ] = useState([]);
