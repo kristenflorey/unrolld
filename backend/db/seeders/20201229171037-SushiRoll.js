@@ -7,6 +7,7 @@ module.exports = {
     return queryInterface.bulkInsert('SushiRolls', [
       {
         name:"Dragon Roll",
+        description:"Shrimp tempura, avocado, cucumber, black sesame seeds & flying fish",
         bar_id:bars[0].id,
         createdAt:new Date(),
         updatedAt:new Date()
@@ -62,6 +63,12 @@ module.exports = {
       {
         name:"Spider Roll",
         bar_id:bars[9].id,
+        createdAt:new Date(),
+        updatedAt:new Date()
+      },
+      {
+        name:"Boston Roll",
+        bar_id:bars[1].id,
         createdAt:new Date(),
         updatedAt:new Date()
       },

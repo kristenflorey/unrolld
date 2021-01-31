@@ -3,6 +3,7 @@ const sessionRouter = require('./session.js');
 const usersRouter = require('./users.js');
 const rollsRouter = require('./rolls.js');
 const barsRouter = require('./bars.js');
+const reviewsRouter = require('./reviews.js')
 // const searchRouter = require('./search.js');
 
 // GET /api/set-token-cookie
@@ -42,6 +43,7 @@ router.post('/test', function (req, res) {
   res.json({ requestBody: req.body });
 });
 
+router.use('/reviews', reviewsRouter);
 router.use('/session', sessionRouter);
 router.use('/users', usersRouter);
 router.use('/rolls', rollsRouter)

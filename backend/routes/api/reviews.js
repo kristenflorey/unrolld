@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/:id', asyncHandler(async (req, res) => {
     const posts = await Review.findAll({
-        where: {bar_id: req.params.id},
+        where: {bar_id: Number(req.params.id)},
         include: [User, SushiBar],
     })
     console.log(await Review.findByPk(1))

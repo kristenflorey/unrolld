@@ -9,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
     review: DataTypes.TEXT
   }, {});
   Review.associate = function(models) {
-    Review.belongsTo(models.SushiBar, {foreignKey:"sushi_bar_id"})
-    Review.belongsTo(models.SushiRoll, {foreignKey:"sushi_roll_id"})
+    Review.belongsTo(models.SushiBar, {foreignKey:"bar_id"})
+    Review.belongsTo(models.SushiRoll, {foreignKey:"roll_id"})
     Review.belongsTo(models.User, {foreignKey:"user_id"})
   };
   return Review;

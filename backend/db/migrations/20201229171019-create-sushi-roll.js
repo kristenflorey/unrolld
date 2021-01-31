@@ -12,6 +12,10 @@ module.exports = {
         type: Sequelize.STRING(50),
         allowNull: false
       },
+      description: {
+        type: Sequelize.STRING(300),
+        allowNull: true
+      },
       bar_id: {
         type: Sequelize.INTEGER,
         references:{model:"SushiBars"}
