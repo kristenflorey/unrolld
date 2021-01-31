@@ -15,7 +15,7 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 40px 30px 50px 30px;
+  margin: 40px 30px 80px 30px;
   height: 100px;
 }
 
@@ -30,11 +30,11 @@
   text-decoration: none;
   color: white;
   font-family: Arial;
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 .nav-bar > div > a:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .avatar-button {

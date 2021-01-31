@@ -43,7 +43,7 @@ return (
             <h3>{rating} Stars</h3>
             <h3>{content}</h3>
             <h3>{createdAt}</h3>
-            <img className='review-images' src={imgUrl ? imgUrl : ""}></img>
+            {/* <img className='review-images' src={imgUrl ? imgUrl : ""}></img> */}
           </div>
         );
     })}

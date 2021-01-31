@@ -16,7 +16,7 @@
   font-family: Avenir;
   color: #226259;
   border-radius: 25px;
-  padding: 10px 10px 30px 30px;
+  padding: 10px 10px 0px 30px;
   margin-left: 50px;
   margin-top: 40px;
 }
@@ -28,11 +28,11 @@
 }
 
 .sushi-bar-img {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .bar-avatar {
-  height: 80px;
+  height: 90px;
   width: auto;
 }
 

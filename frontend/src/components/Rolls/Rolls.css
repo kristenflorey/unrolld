@@ -4,23 +4,20 @@
   grid-template-rows: repeat(10, auto);
   grid-auto-flow: row;
   justify-content: space-between;
-  margin: 10px 0px 0 10px;
-  padding: 40px;
+  margin: 10px 0px 0 20px;
+  padding: 30px;
 }
 
 .sushi-rolls-div {
   display: flex;
   flex-direction: row;
-}
-
-.sushi-rolls-div {
-  width: 378px;
-  height: 148px;
-  border: solid 8px #fec640;
+  width: 270px;
+  height: 77px;
+  border: solid 5px #fec640;
   font-family: Avenir;
   color: #226259;
   border-radius: 20px;
-  padding: 20px 10px 30px 30px;
+  padding: 10px 30px 40px 30px;
   /* margin-left: 50px;
   margin-top: 100px; */
 }
@@ -30,7 +27,7 @@
 }
 
 .sushi-avatar {
-  height: 90px;
+  height: 80px;
   width: auto;
 }
 
@@ -40,30 +37,28 @@
 
 #back-card {
   background-color: #fd754f;
-  width: 380px;
-  height: 160px;
-  border: solid 8px #fec640;
-  font-family: Avenir;
-  color: #226259;
-  border-radius: 20px;
-  padding: 10px 10px 30px 30px;
-}
-
-.Flipcard {
-  border-radius: 25px;
-}
-
-#font-card {
-  background-color: #fd754f;
-  width: 370px;
-  height: 150px;
+  width: 273px;
+  height: 77px;
   border: solid 5px #fec640;
   font-family: Avenir;
-  color: #226259;
-  border-radius: 25px;
-  padding: 10px 10px 30px 30px;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px 30px 40px 30px;
+  word-break: keep-all;
+}
+.roll-name {
+  font-weight: bold;
+  font-size: 22px;
 }
 
-#back-card {
-  background-color: #fd754f;
+.find-button {
+  height: 30px;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  font-size: 10px;
+  border-radius: 10px;
+  color: white;
+  align-self: flex-end;
 }

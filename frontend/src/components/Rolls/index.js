@@ -18,20 +18,10 @@ function Rolls() {
         console.log(data)
     }, []);
 
-    // useEffect(() => {
-    //     async function fetchMyAPI() {
-    //       let response = await fetch('api/rolls')
-    //       response = await response.json()
-    //       setRolls(response)
-    //     }
-
-    //     fetchMyAPI()
-    //   }, [])
-
     return (
         <>
             {rolls.map((roll) => {
-                const { id, name, SushiBar:{name:location} } = roll;
+                const { id, name, description, SushiBar:{name:location, id:sushi_id} } = roll;
                 console.log(roll)
                 console.log(id)
                 return (
@@ -39,8 +29,8 @@ function Rolls() {
                         <FlipCard
                         id="font-card"
                         className='flippy-card'
-                        height={200}
-                        width={420}
+                        height={130}
+                        width={332}
                         margin={20}
                         rotationAxis="y"
                         textFront={
@@ -50,14 +40,17 @@ function Rolls() {
                                 {/* <img className="sushi-avatar" alt="avatar"src={california} /> */}
                             </NavLink>
                             <div className={`sushi-roll-div-${id}`} key={id}>
-                                <h1 className="roll-name">{name}</h1>
-                                <h3 className="roll-location">{location} Sushi Bar</h3>
+                                <p className="roll-name">{name}</p>
+                                <p className="roll-location">{location} Sushi Bar</p>
                             </div>
                         </div>
                         }
                         textBack={
                         <div className="back-div" id="back-card">
-                            <p>This is the reviews side</p>
+                            <p className="sushi-info">{description}</p>
+                            <NavLink to={`/bars/${sushi_id}`} >
+                                <button className="find-button">Find this Roll</button>
+                            </NavLink>
                         </div>
                         }
                         // fontSize={27}
