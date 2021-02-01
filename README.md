@@ -1,5 +1,6 @@
 # UNROLLD
- A Place to Share and Discover Your Favorite Sushi
+
+<img src="frontend/src/img/homepage-wireframe.png"/>
 
 ## Table of Contents
 
@@ -10,4 +11,3 @@
 ## Introduction
 
 ## Dependencies
-
