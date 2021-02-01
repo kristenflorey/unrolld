@@ -19,17 +19,13 @@
   border-radius: 22px;
 }
 .roll-info {
-  margin: 50px 0 0 0;
+  margin: 50px 0 30px 0;
 }
 
 .sushi-avatar {
   height: 90px;
   width: auto;
   margin: 30px 20px 0 20px;
-}
-
-.sushi-avatar:hover {
-  transform: scale(1.1);
 }
 
 #back-card {
@@ -52,12 +48,19 @@
 
 .find-button {
   height: 34px;
-  width: 95px;
-  background-color: rgba(255, 255, 255, 0.4);
+  width: 130px;
+  /* background-color: rgba(255, 255, 255, 0.4);
   border: none;
   font-size: 12px;
   border-radius: 10px;
-  color: white;
+  color: white; */
+  border-radius: 5px;
+  background-color: #1d554a;
+  outline: inherit;
+  border: none;
+  color: #ffc640;
+  font-family: Avenir;
+  text-transform: uppercase;
   float: right;
   margin: 10px 20px 0px 0;
 }

@@ -33,9 +33,9 @@ function Rolls() {
                         rotationAxis="y"
                         textFront={
                         <div className="sushi-rolls-div">
-                            <NavLink to={`/roll/${id}`}className="sushi-roll-img" key={id}>
+                            {/* <NavLink to={`/roll/${id}`}className="sushi-roll-img" key={id}> */}
                                 <img className="sushi-avatar" alt="avatar"src={`./img/sushi-roll-${id}.png`} />
-                            </NavLink>
+                            {/* </NavLink> */}
                             <div className="roll-info" key={id}>
                                 <ps className="roll-name">{name}</ps>
                                 <br/>

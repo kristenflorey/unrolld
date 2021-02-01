@@ -4,11 +4,11 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Reviews', [
       {
-      user_id: 1,
+      user_id: 5,
       bar_id: 1,
       roll_id: null,
       rating: 4,
-      review: 'Wasabi is so great omg',
+      review: 'Amazing atmosphere and service. We come here every weekend!',
       createdAt: new Date(),
       updatedAt: new Date()
     },
@@ -21,12 +21,13 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date()
     },
+
     {
       user_id: 1,
       bar_id: 3,
       roll_id: null,
       rating: 4,
-      review: 'Bento is so great omg',
+      review: 'I love getting the Bento Boxes to-go, such a great lunch time meal!',
       createdAt: new Date(),
       updatedAt: new Date()
     },

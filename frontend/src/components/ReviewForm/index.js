@@ -10,7 +10,7 @@ function ReviewForm() {
     const userId = useSelector(state => state.session.user.id);
 
     // const [name, setName] = useState("")
-    const [rating, setRating] = useState(0)
+    const [rating, setRating] = useState("")
     const [review, setReview] = useState("")
 
     const updateRating = (e) => setRating(e.target.value)
@@ -35,14 +35,14 @@ function ReviewForm() {
     return (
         <>
             <form className="review-form" onSubmit={handleSubmit}>
-                <ps className="review-form-title">Post Review</ps>
+                <ps className="review-form-title">Add a Review</ps>
                 {/* <input type="hidden" name="_csrf" value={csrfToken}></input> */}
-                <label htmlFor="review">Review</label>
+                {/* <label htmlFor="review">Review</label> */}
                 <textarea value={review} onChange={updateReview} name="review" type="text">
 
                 </textarea>
                 <label htmlFor="rating">Rating</label>
-                <input value={rating} onChange={updateRating} name="rating" type="text">
+                <input value={rating} onChange={updateRating} name="rating" type="text" placeholder="1-5">
                 </input>
                 <button type="submit">Submit</button>
             </form>
