@@ -35,21 +35,21 @@
 }
 
 .review-form > label {
-  color: #16322d;
+  color: #1c5248;
   font-family: Avenir;
   text-transform: uppercase;
   font-size: 18px;
 }
 
 .review-form > ps {
-  color: #16322d;
+  color: #1c5248;
   font-family: Avenir;
   font-size: 35px;
   margin: 20px 0 20px 0;
 }
 
 .review-form > textarea {
-  width: 300px;
+  width: 330px;
   height: 200px;
   margin: 0px 0px 20px 0px;
   padding: 10px;
@@ -65,7 +65,7 @@
   margin: 30px 0px 0px 0px;
   padding: 8px;
   border-radius: 5px;
-  background-color: #193a34;
+  background-color: #1c5248;
   outline: inherit;
   border: none;
   color: #ffc640;
