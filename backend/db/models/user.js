@@ -18,6 +18,10 @@ module.exports = (sequelize, DataTypes) => {
           }
         }
       },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
       email: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -54,8 +58,8 @@ module.exports = (sequelize, DataTypes) => {
   };
   User.prototype.toSafeObject = function () {
     // remember, this cannot be an arrow function
-    const { id, username, email } = this; // context will be the User instance
-    return { id, username, email };
+    const { id, username, email, name } = this; // context will be the User instance
+    return { id, username, email, name };
   };
 
   User.prototype.validatePassword = function (password) {
@@ -81,12 +85,13 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
 
-  User.signup = async function ({ username, email, password }) {
+  User.signup = async function ({ username, email, password, name }) {
     const hashedPassword = bcrypt.hashSync(password);
     const user = await User.create({
       username,
       email,
-      hashedPassword
+      hashedPassword,
+      name
     });
     return await User.scope('currentUser').findByPk(user.id);
   };

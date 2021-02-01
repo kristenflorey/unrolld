@@ -3,7 +3,6 @@ import {useState, useEffect} from "react";
 import { useParams } from 'react-router-dom';
 import reviewReducer, { fetchAllReviews } from '../../store/reviews';
 import { useDispatch, useSelector } from 'react-redux';
-import sushi from "../../img/alaska-roll.png";
 import ReviewForm from '../ReviewForm';
 
 
@@ -30,14 +29,13 @@ function SushiBar() {
 return (
     <>
     <div className="reviews-page">
-
-            {/* <img className="sushi-bar-img" alt="sushi-bar-avatar" src={sushi}/> */}
+        <div className="reviews-container">
             {posts && posts.map((posts) => {
                 const {SushiBar, SushiBar:{website:website_url, id:bar_id, location:bar_location} } = posts;
                 return (
                     <>
                         <div className="sushi-bar-header">
-                            <img className="sushi-bar-img" alt="avatar"src={`../../img/sushi-roll-${bar_id}.png`} />
+                            <img className="sushi-bar-img" alt="avatar"src={`../../img/sushi-bar-${bar_id}.png`} />
                             <div className="sushi-bar-info">
                                 <span className="sushi-bar-name">{SushiBar.name} Sushi Bar</span>
                                 <br/>
@@ -51,6 +49,7 @@ return (
             })}
 
 
+        <div>
         <p className="review-header">Reviews</p>
         {posts && posts.map((post)=>{
             const {User, SushiBar, rating, content, review, createdAt, id } = post;
@@ -66,8 +65,13 @@ return (
             </div>
             );
         })}
+        </div>
+        </div>
+        <ReviewForm/>
+
+
     </div>
-    <ReviewForm/>
+
     </>
 )
 }

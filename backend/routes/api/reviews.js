@@ -2,8 +2,6 @@ const express = require('express');
 const asyncHandler = require('express-async-handler');
 const router = express.Router();
 const { Review, User, SushiBar } = require('../../db/models');
-const csrf = require("csurf")
-const csrfProtection = csrf({cookie:true})
 
 
 router.get('/:id', asyncHandler(async (req, res) => {
@@ -16,12 +14,13 @@ router.get('/:id', asyncHandler(async (req, res) => {
 })
 );
 
-router.post("/bars/create", csrfProtection, asyncHandler(async (req, res, next) => {
+router.post("/bars/create", asyncHandler(async (req, res, next) => {
     const { rating, review } = req.body;
     const newReview = db.Review.build({
         rating,
         review
     });
+
 
     await newReview.save();
     if (newReview) {
@@ -30,8 +29,7 @@ router.post("/bars/create", csrfProtection, asyncHandler(async (req, res, next) 
         console.log(req.errors)
         res.render({
             rating,
-            review,
-            csrfToken:req.csrfToken()
+            review
         });
     }
 

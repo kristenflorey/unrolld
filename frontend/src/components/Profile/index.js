@@ -1,7 +1,6 @@
 import "./Profile.css"
 import { useSelector } from 'react-redux';
 import bubbleBop from "../../img/blue-avatar.svg";
-// import bubbleBop from "../../../public/img/blue-avatar.svg";
 
 function Profile() {
     const currentUser = useSelector(state => {
@@ -14,9 +13,6 @@ function Profile() {
         <>
             <div className="profile-body">
                 <div className="profile">
-                    {/* <div>
-                        <img className="profile-avatar-pic" alt="avatar"src={bubbleBop} />
-                    </div> */}
                     <div className="username">
                         {/* <p className="name">{currentUser.name}</p> */}
                         <p className="name">{currentUser.username}</p>

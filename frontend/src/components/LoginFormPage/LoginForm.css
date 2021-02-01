@@ -12,12 +12,9 @@
   box-sizing: border-box;
   align-items: center;
   background-color: #f9af00;
-  /* background-image: linear-gradient(to right bottom, #f9af00, #f57211); */
-
   border-radius: 50%;
   width: 500px;
   height: 500px;
-  /* margin: 20px auto; */
   padding: 80px;
   font-family: "Arial Narrow";
   color: white;
@@ -37,8 +34,6 @@
 }
 
 .login-form > form > p {
-  /* font-family: monaco, Consolas, "Lucida Console", monospace;
-  color: white; */
   color: #16322d;
   font-family: Avenir;
   font-size: 40px;
@@ -65,8 +60,6 @@
   background-color: #193a34;
   outline: inherit;
   border: none;
-  /* font-family: monaco, Consolas, "Lucida Console", monospace;
-  color: #fd754f; */
   color: #ffc640;
   font-family: Avenir;
   font-size: 15px;
@@ -74,7 +67,6 @@
 
 ::placeholder {
   text-align: center;
-  /* color: white; */
   text-transform: uppercase;
   color: #16322d;
   font-family: Avenir;

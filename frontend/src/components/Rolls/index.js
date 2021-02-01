@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Rolls.css';
-// import california from "../../img/california.png";
-// import caviar from "../../img/caviar.png";
 import FlipCard from 'fc-card-component';
 
 
@@ -29,19 +27,19 @@ function Rolls() {
                         <FlipCard
                         id="font-card"
                         className='flippy-card'
-                        height={130}
-                        width={332}
+                        height={160}
+                        width={397}
                         margin={20}
                         rotationAxis="y"
                         textFront={
                         <div className="sushi-rolls-div">
                             <NavLink to={`/roll/${id}`}className="sushi-roll-img" key={id}>
                                 <img className="sushi-avatar" alt="avatar"src={`./img/sushi-roll-${id}.png`} />
-                                {/* <img className="sushi-avatar" alt="avatar"src={california} /> */}
                             </NavLink>
-                            <div className={`sushi-roll-div-${id}`} key={id}>
-                                <p className="roll-name">{name}</p>
-                                <p className="roll-location">{location} Sushi Bar</p>
+                            <div className="roll-info" key={id}>
+                                <ps className="roll-name">{name}</ps>
+                                <br/>
+                                <ps className="roll-location">{location} Sushi Bar</ps>
                             </div>
                         </div>
                         }
@@ -53,7 +51,6 @@ function Rolls() {
                             </NavLink>
                         </div>
                         }
-                        // fontSize={27}
                         colorFront="yellow"
                         textColorFront="cream"
                         >

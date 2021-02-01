@@ -12,12 +12,9 @@
   box-sizing: border-box;
   align-items: center;
   background-color: #4a9b90;
-  /* background-image: linear-gradient(to right bottom, #4eb7a9, #3c8d7a); */
-
   border-radius: 50%;
   width: 500px;
   height: 500px;
-  /* margin: 20px auto; */
   padding: 80px;
   font-family: "Arial Narrow";
   color: white;
@@ -37,8 +34,6 @@
 }
 
 .signup-form > form > p {
-  /* font-family: monaco, Consolas, "Lucida Console", monospace;
-  color: white; */
   color: #ffbb00;
   font-family: Avenir;
   font-size: 37px;

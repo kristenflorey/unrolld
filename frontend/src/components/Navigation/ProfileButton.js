@@ -3,6 +3,7 @@ import { useHistory, NavLink } from "react-router-dom"
 import { useDispatch } from 'react-redux';
 import * as sessionActions from '../../store/session';
 import bubbleBop from "../../img/blue-avatar.svg";
+import peaceout from "../../img/peace-log-out.png";
 import "./Navigation.css";
 
 function ProfileButton({ user }) {

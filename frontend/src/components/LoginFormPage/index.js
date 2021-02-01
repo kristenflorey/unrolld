@@ -13,7 +13,7 @@ function LoginFormPage() {
 
 
   // REDIRECT LOGIN
-  if (sessionUser) return <Redirect to="/profile" />;
+  if (sessionUser) return <Redirect to="/rolls" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();

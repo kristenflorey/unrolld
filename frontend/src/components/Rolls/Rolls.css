@@ -4,31 +4,28 @@
   grid-template-rows: repeat(10, auto);
   grid-auto-flow: row;
   justify-content: space-between;
-  margin: 0px 0px 0 20px;
-  padding: 30px;
+  margin: 22px 0px 0 65px;
+  padding: 25px;
 }
 
 .sushi-rolls-div {
   display: flex;
   flex-direction: row;
-  width: 270px;
-  height: 77px;
+  width: 397px;
+  height: 157px;
   border: solid 5px #fec640;
   font-family: Avenir;
   color: #226259;
-  border-radius: 20px;
-  padding: 10px 30px 40px 30px;
-  /* margin-left: 50px;
-  margin-top: 100px; */
+  border-radius: 22px;
 }
-
-.sushi-roll-img {
-  margin: 20px 5px 0 0;
+.roll-info {
+  margin: 50px 0 0 0;
 }
 
 .sushi-avatar {
-  height: 80px;
+  height: 90px;
   width: auto;
+  margin: 30px 20px 0 20px;
 }
 
 .sushi-avatar:hover {
@@ -37,33 +34,34 @@
 
 #back-card {
   background-color: #ff6a41;
-  width: 273px;
-  height: 77px;
+  width: 395px;
+  height: 128px;
   border: solid 5px #fec640;
   font-family: Avenir;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 20px;
-  padding: 10px 30px 50px 30px;
+  padding: 10px 30px 30px 30px;
   word-break: keep-all;
 }
 .roll-name {
-  font-weight: bold;
-  font-size: 22px;
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #226259;
 }
 
 .find-button {
-  height: 32px;
-  width: 90px;
+  height: 34px;
+  width: 95px;
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
   font-size: 12px;
   border-radius: 10px;
   color: white;
   float: right;
-  margin: 0 0 10px 0;
+  margin: 10px 20px 0px 0;
 }
 
 .sushi-info {
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 30px;
 }

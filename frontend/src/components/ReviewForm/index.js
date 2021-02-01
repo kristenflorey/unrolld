@@ -32,22 +32,18 @@ function ReviewForm() {
 
     }
 
-    //   useEffect(async () => {
-    //     dispatch(fetchAllReviews());
-    //   }, [dispatch]);
-
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <h1>Post a New Review</h1>
-                <input type="hidden" name="_csrf" value={csrfToken}></input>
-                <label htmlFor="rating">Rating</label>
-                <input value={rating} onChange={updateRating} name="rating" type="text">
-                </input>
+            <form className="review-form" onSubmit={handleSubmit}>
+                <ps className="review-form-title">Post Review</ps>
+                {/* <input type="hidden" name="_csrf" value={csrfToken}></input> */}
                 <label htmlFor="review">Review</label>
                 <textarea value={review} onChange={updateReview} name="review" type="text">
 
                 </textarea>
+                <label htmlFor="rating">Rating</label>
+                <input value={rating} onChange={updateRating} name="rating" type="text">
+                </input>
                 <button type="submit">Submit</button>
             </form>
         </>

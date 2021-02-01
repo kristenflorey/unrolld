@@ -19,7 +19,7 @@
   height: 100px;
 }
 .signup {
-  margin-left: 30px;
+  margin-left: 30;
 }
 .signup:hover {
   transform: scale(1.1);
@@ -68,8 +68,13 @@
   font-size: 15px;
 }
 
+.peaceout-img {
+  height: 45px;
+  width: auto;
+}
+
 .logout-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .avatar-logout {
   width: 200px;

@@ -1,5 +1,7 @@
 .reviews-page {
   padding: 30px 50px 50px 80px;
+  display: flex;
+  flex-direction: row;
 }
 
 .sushi-bar-header {
@@ -61,4 +63,10 @@
   font-family: Avenir;
   font-size: 18px;
   margin-left: 10px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

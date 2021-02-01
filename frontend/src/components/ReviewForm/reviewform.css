@@ -1,0 +1,74 @@
+.review-form {
+  align-items: center;
+  background-color: #f9af00;
+  border-radius: 50%;
+  padding: 70px;
+  width: 350px;
+  height: 350px;
+  font-family: Avenir;
+  color: white;
+  margin: 0 20px 0 100px;
+  display: flex;
+  flex-direction: column;
+  animation: bounce 0.7s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: 2;
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 200px, 0);
+  }
+}
+
+.review-form > input {
+  height: 20px;
+  width: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: inherit;
+  border: none;
+}
+
+.review-form > ps {
+  color: #16322d;
+  font-family: Avenir;
+  font-size: 40px;
+  margin: 20px 0 20px 0;
+}
+
+.review-form > textarea {
+  width: 300px;
+  height: 200px;
+  margin: 0px 0px 20px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: inherit;
+  border: none;
+}
+
+.review-form > button {
+  height: 40px;
+  width: 100px;
+  margin: 50px 0px 0px 0px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #193a34;
+  outline: inherit;
+  border: none;
+  color: #ffc640;
+  font-family: Avenir;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.review-form-title {
+  text-transform: uppercase;
+  font-size: 30px;
+}
