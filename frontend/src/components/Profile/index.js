@@ -7,25 +7,30 @@ function Profile() {
     const currentUser = useSelector(state => {
         return state.session.user;
     });
+    console.log(currentUser)
+    console.log(currentUser.email)
 
     return (
         <>
             <div className="profile-body">
                 <div className="profile">
-                    <div>
+                    {/* <div>
                         <img className="profile-avatar-pic" alt="avatar"src={bubbleBop} />
-                    </div>
+                    </div> */}
                     <div className="username">
-                        <p className="name">{currentUser.name}</p>
-                        <ps>{currentUser.username}</ps>
+                        {/* <p className="name">{currentUser.name}</p> */}
+                        <p className="name">{currentUser.username}</p>
+                        <p className="email">{currentUser.email}</p>
+
                     </div>
 
                 </div>
-                <div>
-                    <h1 className="activity">Your Recent Activity</h1>
-                    <hr/>
+                <div className="activity">
+                    <p className="activity-header">Recent Activity</p>
                     <div>
-                        <h3 className="users-activity">{currentUser.name} visited Wasabi Sushi Bar</h3>
+                        <p className="users-activity"><b>{currentUser.username}</b> visited <b>Wasabi Sushi Bar</b> <br/> in <b>San Diego, CA</b></p>
+                        <p className="users-activity-2"><b>{currentUser.username}</b> enjoyed a <b>Dynamite Roll</b> <br/> at <b>Wasabi Sushi Bar</b></p>
+                        <p className="users-activity"><b>{currentUser.username}</b> visited <b>Aikou Sushi Bar</b> <br/> in <b>Brooklyn, NY</b></p>
                     </div>
                 </div>
             </div>

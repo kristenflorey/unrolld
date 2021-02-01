@@ -26,11 +26,14 @@ function Bars() {
                     <div className="sushi-bars">
                         <div className="sushi-bar-div" >
                             <NavLink to={`/bars/${id}`} className="sushi-bar-img" key={id}>
-                                <img className="bar-avatar" alt="avatar"src={caviar} />
+                                {/* <img className="bar-avatar" alt="avatar"src={caviar} /> */}
+                                <img className="bar-avatar" alt="avatar"src={`./img/sushi-roll-${id}.png`} />
                             </NavLink>
                             <div className={`sushi-bar-div-${id}`} key={id}>
-                                <h1 className="bar-name">{name}</h1>
-                                <p className="bar-location">{location}</p>
+                                <ps className="bar-name">{name}</ps>
+                                <br/>
+                                <ps className="bar-location">{location}</ps>
+                                <br/>
                                 <a href={website} target="_blank" className="bar-website">{website}</a>
                             </div>
                         </div>

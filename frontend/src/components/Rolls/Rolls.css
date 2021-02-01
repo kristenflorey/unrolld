@@ -4,7 +4,7 @@
   grid-template-rows: repeat(10, auto);
   grid-auto-flow: row;
   justify-content: space-between;
-  margin: 10px 0px 0 20px;
+  margin: 0px 0px 0 20px;
   padding: 30px;
 }
 
@@ -36,15 +36,15 @@
 }
 
 #back-card {
-  background-color: #fd754f;
+  background-color: #ff6a41;
   width: 273px;
   height: 77px;
   border: solid 5px #fec640;
   font-family: Avenir;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 20px;
-  padding: 10px 30px 40px 30px;
+  padding: 10px 30px 50px 30px;
   word-break: keep-all;
 }
 .roll-name {
@@ -53,12 +53,17 @@
 }
 
 .find-button {
-  height: 30px;
-  width: 80px;
+  height: 32px;
+  width: 90px;
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
-  font-size: 10px;
+  font-size: 12px;
   border-radius: 10px;
   color: white;
-  align-self: flex-end;
+  float: right;
+  margin: 0 0 10px 0;
+}
+
+.sushi-info {
+  margin: 10px 0 0 0;
 }

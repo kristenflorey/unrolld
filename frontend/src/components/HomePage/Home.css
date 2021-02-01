@@ -1,5 +1,5 @@
 .circle {
-  background-color: #f9af00;
+  background-color: #ffae00;
   border-radius: 50%;
   width: 430px;
   height: 430px;
@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 80px;
 }
 
 .sushi-tray {

@@ -15,10 +15,15 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 40px 30px 80px 30px;
+  margin: 40px 30px 40px 30px;
   height: 100px;
 }
-
+.signup {
+  margin-left: 30px;
+}
+.signup:hover {
+  transform: scale(1.1);
+}
 .nav-bar > div {
   display: flex;
   justify-content: space-between;
@@ -33,7 +38,7 @@
   margin-right: 35px;
 }
 
-.nav-bar > div > a:hover {
+.rolls-link:hover {
   transform: scale(1.05);
 }
 
