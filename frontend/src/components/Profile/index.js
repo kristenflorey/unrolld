@@ -14,9 +14,10 @@ function Profile() {
             <div className="profile-body">
                 <div className="profile">
                     <div className="username">
-                        {/* <p className="name">{currentUser.name}</p> */}
-                        <p className="name">{currentUser.username}</p>
-                        <p className="email">{currentUser.email}</p>
+                        <p className="name">{currentUser.name}</p>
+                        <ps className="user-name">{currentUser.username}</ps>
+                        <br/>
+                        <ps className="email">{currentUser.email}</ps>
 
                     </div>
 
@@ -24,9 +25,10 @@ function Profile() {
                 <div className="activity">
                     <p className="activity-header">Recent Activity</p>
                     <div>
-                        <p className="users-activity"><b>{currentUser.username}</b> visited <b>Wasabi Sushi Bar</b> <br/> in <b>San Diego, CA</b></p>
-                        <p className="users-activity-2"><b>{currentUser.username}</b> enjoyed a <b>Dynamite Roll</b> <br/> at <b>Wasabi Sushi Bar</b></p>
-                        <p className="users-activity"><b>{currentUser.username}</b> visited <b>Aikou Sushi Bar</b> <br/> in <b>Brooklyn, NY</b></p>
+                        <p className="users-activity"><b>{currentUser.name}</b> visited <b>Wasabi Sushi Bar</b> <br/> in <b>San Diego, CA</b></p>
+                        <p className="users-activity-2"><b>{currentUser.name}</b> enjoyed a <b>Dynamite Roll</b> <br/> at <b>Wasabi Sushi Bar</b></p>
+                        <p className="users-activity"><b>{currentUser.name}</b> visited <b>Aikou Sushi Bar</b> <br/> in <b>Brooklyn, NY</b></p>
+                        <p className="users-activity-2"><b>{currentUser.name}</b> visited <b>Wataru Sushi Bar</b> <br/> in <b>Seattle, WA</b></p>
                     </div>
                 </div>
             </div>
