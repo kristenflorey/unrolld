@@ -15,10 +15,15 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  margin: 40px 30px 50px 30px;
+  margin: 40px 30px 40px 30px;
   height: 100px;
 }
-
+.signup {
+  margin-left: 30;
+}
+.signup:hover {
+  transform: scale(1.1);
+}
 .nav-bar > div {
   display: flex;
   justify-content: space-between;
@@ -30,11 +35,11 @@
   text-decoration: none;
   color: white;
   font-family: Arial;
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
-.nav-bar > div > a:hover {
-  transform: scale(1.03);
+.rolls-link:hover {
+  transform: scale(1.05);
 }
 
 .avatar-button {
@@ -63,8 +68,13 @@
   font-size: 15px;
 }
 
+.peaceout-img {
+  height: 45px;
+  width: auto;
+}
+
 .logout-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .avatar-logout {
   width: 200px;

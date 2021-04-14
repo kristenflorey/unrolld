@@ -9,7 +9,7 @@ import Profile from "./components/Profile";
 import LoginFormPage from "./components/LoginFormPage";
 import Rolls from "./components/Rolls";
 import Bars from "./components/Bars";
-import SushiRoll from "./components/SushiRoll";
+import SushiBar from "./components/SushiBar";
 import Reviews from "./components/Reviews";
 
 function App() {
@@ -39,11 +39,11 @@ function App() {
           <Route path="/rolls">
             <Rolls />
           </Route>
-          <Route path="/bars">
+          <Route exact path="/bars">
             <Bars />
           </Route>
-          <Route path="/roll/:id">
-            <SushiRoll />
+          <Route path="/bars/:id">
+            <SushiBar />
           </Route>
           <Route path="/reviews/:id">
             <Reviews />

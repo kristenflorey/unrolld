@@ -16,7 +16,7 @@ function Navigation({ isLoaded }){
   } else {
     sessionLinks = (
       <>
-        <NavLink to="/login">SIGN IN</NavLink>
+        <NavLink to="/login" className='signup'>SIGN IN</NavLink>
         <NavLink to="/signup" className='signup'>CREATE A NEW ACCOUNT</NavLink>
       </>
     );
@@ -26,7 +26,6 @@ function Navigation({ isLoaded }){
     <div className='nav-bar'>
       <NavLink to="/" className='unrolld'>UNROLLD</NavLink>
       <div>
-        {/* <NavLink exact to="/">Home</NavLink> */}
         {isLoaded && sessionLinks}
       </div>
     </div>

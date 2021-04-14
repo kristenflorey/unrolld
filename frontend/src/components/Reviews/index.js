@@ -22,15 +22,12 @@ function Reviews() {
         dispatch(fetchAllReviews(id))
 
     }, []);
-    // const whatAmI = myState.map(state => {
-    //     return state
-    // })
 
 return (
     <>
     <h1 className="search-header">Reviews</h1>
     {posts && posts.map((post)=>{
-        const {User, SushiBar, rating, imgUrl, content, createdAt, id } = post;
+        const {User, SushiBar, rating, content, createdAt, id } = post;
         return (
           <div className="review-container" key={id}>
             <h3>{User.name} said</h3>
@@ -43,7 +40,6 @@ return (
             <h3>{rating} Stars</h3>
             <h3>{content}</h3>
             <h3>{createdAt}</h3>
-            <img className='review-images' src={imgUrl ? imgUrl : ""}></img>
           </div>
         );
     })}

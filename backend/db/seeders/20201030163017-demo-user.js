@@ -23,6 +23,19 @@ module.exports = {
         name: 'demo3',
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
+      {
+        email: 'kristen@demo-user.com',
+        username: 'Kristen Florey',
+        name: 'kristen',
+        hashedPassword: bcrypt.hashSync('password'),
+      },
+      {
+        email: 'joealves@aa.com',
+        username: 'penny_roll',
+        name: 'Joe Alves',
+        hashedPassword: bcrypt.hashSync('password'),
+      }
+
     ], {});
   },
 

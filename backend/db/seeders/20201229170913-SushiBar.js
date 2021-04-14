@@ -73,7 +73,24 @@ module.exports = {
           website:"www.ashia.com",
           createdAt:new Date(),
           updatedAt:new Date()
-        }
+        },
+        {
+          name:"Nova",
+          location: "Atlanta, GA",
+          website:"https://www.novaatlantaga.com/",
+          createdAt:new Date(),
+          updatedAt:new Date()
+        },
+        {
+          name:"Sakura",
+          location: "Miami, FL",
+          website:"https://www.mysakurasushi.com/",
+          createdAt:new Date(),
+          updatedAt:new Date()
+        },
+
+
+
       ], {});
 
   },

@@ -1,31 +1,34 @@
 import "./Profile.css"
 import { useSelector } from 'react-redux';
 import bubbleBop from "../../img/blue-avatar.svg";
-// import bubbleBop from "../../../public/img/blue-avatar.svg";
 
 function Profile() {
     const currentUser = useSelector(state => {
         return state.session.user;
     });
+    console.log(currentUser)
+    console.log(currentUser.email)
 
     return (
         <>
             <div className="profile-body">
                 <div className="profile">
-                    <div>
-                        <img className="profile-avatar-pic" alt="avatar"src={bubbleBop} />
-                    </div>
                     <div className="username">
                         <p className="name">{currentUser.name}</p>
-                        <ps>{currentUser.username}</ps>
+                        <ps className="user-name">{currentUser.username}</ps>
+                        <br/>
+                        <ps className="email">{currentUser.email}</ps>
+
                     </div>
 
                 </div>
-                <div>
-                    <h1 className="activity">Your Recent Activity</h1>
-                    <hr/>
+                <div className="activity">
+                    <p className="activity-header">Recent Activity</p>
                     <div>
-                        <h3 className="users-activity">{currentUser.name} visited Wasabi Sushi Bar</h3>
+                        <p className="users-activity"><b>{currentUser.name}</b> visited <b>Wasabi Sushi Bar</b> <br/> in <b>San Diego, CA</b></p>
+                        <p className="users-activity-2"><b>{currentUser.name}</b> enjoyed a <b>Dynamite Roll</b> <br/> at <b>Wasabi Sushi Bar</b></p>
+                        <p className="users-activity"><b>{currentUser.name}</b> visited <b>Aikou Sushi Bar</b> <br/> in <b>Brooklyn, NY</b></p>
+                        <p className="users-activity-2"><b>{currentUser.name}</b> visited <b>Wataru Sushi Bar</b> <br/> in <b>Seattle, WA</b></p>
                     </div>
                 </div>
             </div>

@@ -36,14 +36,11 @@ var App = React.createClass({
   render() {
     return (
       <div>
-        {/* Default behavior is horizontal flip on hover, or focus */}
         <FlipCard>
-          {/* The first child is used as the front of the card */}
           <div>
             <div>Front</div>
             <div><small>(horizontal flip)</small></div>
           </div>
-          {/* The second child is used as the back of the card */}
           <div>Back</div>
         </FlipCard>
         </div>

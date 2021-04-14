@@ -1,0 +1,72 @@
+.reviews-page {
+  padding: 30px 50px 50px 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sushi-bar-header {
+  display: flex;
+  flex-direction: row;
+  border: 6px solid #fec640;
+  border-radius: 20px;
+  padding: 20px 0px 30px 50px;
+  width: 900px;
+  font-family: Avenir;
+  color: white;
+  font-size: 30px;
+}
+
+.sushi-bar-info {
+  margin-top: 40px;
+}
+
+.sushi-bar-name {
+  text-transform: uppercase;
+  font-size: 55px;
+}
+
+.sushi-bar-img {
+  height: 190px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.review-header {
+  font-family: Avenir;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.review-container {
+  border: 5px solid #fec640;
+  border-radius: 20px;
+  padding: 20px 30px 30px 50px;
+  width: 600px;
+  font-family: Avenir;
+  color: white;
+}
+
+.star-rating {
+  width: 100px;
+  height: auto;
+}
+
+.bar-page-location {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.bar-website-url {
+  color: white;
+  text-decoration: none;
+  font-family: Avenir;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
